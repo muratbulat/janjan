@@ -81,9 +81,10 @@ class janjan(IStrategy):
                 (dataframe['ema35'] < dataframe['ema30']) &
                 (dataframe['ema30'] < dataframe['ema20']) &
                 #
-                (dataframe['close'].shift(1) < dataframe['ema30'].shift(1)) &
-                (dataframe['close'].shift(2) < dataframe['ema30'].shift(2)) &
-                (dataframe['close'].shift(3) < dataframe['ema30'].shift(3)) &
+                (dataframe['close'] > dataframe['ema30']) &
+                (dataframe['close'].shift(1) > dataframe['ema30'].shift(1)) &
+                (dataframe['close'].shift(2) > dataframe['ema30'].shift(2)) &
+                (dataframe['close'].shift(3) > dataframe['ema30'].shift(3)) &
                 #
                 (dataframe['consensus_buy'] > 34) &
                 (dataframe['volume'] > 0)
