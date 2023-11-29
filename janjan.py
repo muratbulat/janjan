@@ -39,12 +39,6 @@ class janjan(IStrategy):
             'ema50': {'color': '#8834ff'},
             'ema100': {'color': '#da54c9'},
             'ema200': {'color': '#d7580e'},
-            "subplots": {
-                "consensus": {
-                    'consensus_buy': {'color': '#a58b38',"type": "line"}, 
-                    'consensus_sell': {'color': '#eabd18',"type": "line"}, 
-                    },
-                },
             },
         }
     
