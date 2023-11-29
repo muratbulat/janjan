@@ -1,0 +1,2 @@
+# janjan
+Freqtrade Janjan Strategy
